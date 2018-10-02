@@ -1,0 +1,5 @@
+rails g resource Topic name:text --no-test-framework
+rails g resource Category --no-test-framework
+rails g resource UserEntry --no-test-framework
+rails g resource User --no-test-framework
+rails g resource Gif --no-test-framework
