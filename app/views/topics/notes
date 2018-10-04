@@ -1,0 +1,9 @@
+index
+
+
+<h1>Ruby</h1>
+<%@topics.each do |topic|%>
+<ul>
+<li><%=link_to topic.name, topic_path(topic)%></li>
+</ul>
+<%end%>

@@ -1,0 +1,8 @@
+
+<b>Topics:</b> <%=@category.name%>
+<ul>
+<%@category.topics.each do |topic|%>
+<b><%=link_to topic.name,  topic_path%></b>
+<%=topic.description%> </br>
+<%end%>
+</ul>
