@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2018_10_02_134234) do
     t.string "name"
     t.text "description"
     t.integer "category_id"
+    t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

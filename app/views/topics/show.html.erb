@@ -1,7 +1,9 @@
 
 <h1><%=@topic.name%></h1> </br>
 <b>Description: </b> <%=@topic.description%></br>
-<b>Category: </b><%= link_to @topic.category.name, category_path(@category)%>
+<%=@topic.link%>
+<b>Category: </b><%= link_to @category.name, category_path(@category)%>
+
 <%= link_to "Delete", @topic, method: :delete%>
 <!-- <%=link_to "edit", @topic, method: :edit%> -->
 <%= link_to 'Edit Topic', edit_topic_path(@topic) %>

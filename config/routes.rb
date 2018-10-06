@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :gifs
-  resources :users
+  resources :users, only: [:index, :show]
   resources :user_entries
   resources :categories
   resources :topics

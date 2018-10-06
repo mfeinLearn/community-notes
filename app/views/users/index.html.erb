@@ -1,8 +1,4 @@
 <%@users.each do |user|%>
-<%=link_to user.name, user_path%></br>
+<%=link_to user.name, user_path(user)%></br>
 <%=user.bio%></br>
-<%user.topics.each do |topic|%>
-<%=topic.name%></br>
-<%=topic.description%>
-<%end%>
 <%end%>

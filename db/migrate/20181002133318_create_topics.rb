@@ -3,7 +3,8 @@ class CreateTopics < ActiveRecord::Migration[5.2]
     create_table :topics do |t|
       t.string :name
       t.text :description
-      t.integer :category_id      
+      t.integer :category_id
+      t.string :link
 
 
       t.timestamps

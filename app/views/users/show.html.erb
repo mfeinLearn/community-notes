@@ -1,1 +1,11 @@
-lllllllllllllllllll
+<h1>This is <%= @user.name %> page</h1>
+
+<%=@user.bio%>
+<%@user.topics.each do |topic|%>
+
+<ul>
+<li><%=topic.name%> </li></br>
+<%=topic.description%></br>
+
+</Ul>
+<%end%>
